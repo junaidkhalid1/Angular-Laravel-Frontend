@@ -10,8 +10,8 @@ export class QuoteService {
     }
 
     addQuote(content: string) {
-        const body = JSON.stringify({content: content}); // To set body
-        const headers = new Headers({'Content-Type': 'application/json'}); // To set headers
+        const body = JSON.stringify({content: content});
+        const headers = new Headers({'Content-Type': 'application/json'});
         return this.http.post('http://127.0.0.1:8000/api/quote', body, {headers: headers})
     }
 
