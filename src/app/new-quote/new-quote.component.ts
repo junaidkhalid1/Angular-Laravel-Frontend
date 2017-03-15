@@ -10,6 +10,7 @@ import { QuoteService } from "../quote.service";
 })
 export class NewQuoteComponent implements OnInit {
 
+  // To use quote.service.ts declare service in constructor
   constructor(private quoteService: QuoteService) { }
 
   ngOnInit() {

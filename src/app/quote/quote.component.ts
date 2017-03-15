@@ -14,6 +14,7 @@ export class QuoteComponent implements OnInit {
     editing = false;
     editValue = '';
 
+    // To use quote.service.ts declare service in constructor
     constructor(private quoteService: QuoteService) { }
 
     ngOnInit() {
